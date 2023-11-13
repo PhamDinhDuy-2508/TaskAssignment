@@ -55,36 +55,51 @@ GET TASK WITH ID  API :
 
 
 To be able to use the authorization API:
-_ If we do not have an account, we will go to /api/v1/auth/register to register see example below.
+_ If we do not have an account, we will go to 
+```bash
+/api/v1/auth/register
+```
+to register see example below.
 
 example request body :
+```bash
 {
     "username" : "phamdinhduytest123",
     "password" :"25082000"
 }
+```
 
 ![image](https://github.com/PhamDinhDuy-2508/TaskAssignment/assets/69359047/13af3b49-f173-4428-b038-1e10f4fb242a)
 
 After registering, we can start logging in (note that the username and password we just registered and currently by default all accounts are in the ADMIN role)
 example request body :
+```bash
 {
     "username" : "phamdinhduytest123",
     "password" :"25082000"
 }
-
+```
 ![image](https://github.com/PhamDinhDuy-2508/TaskAssignment/assets/69359047/0b593431-aa21-47df-9b91-d9ed5303e98c)
 
 Save the token And use that token for API authorizations
-Create TASK  API : /api/v1/tasks/create
+Create TASK  API : 
+```bash
+/api/v1/tasks/create
+```
+```bash
 Header:{
 'Authorization' : "Bearer" +  /* token has bee reponsed by Login */
 }
+```
+```bash
+
 request Body :
 {
     "title":"phamdinhduytest123456",
     "description":"123123123123123123",
     "complete" : true
 }
+```
 
 ![image](https://github.com/PhamDinhDuy-2508/TaskAssignment/assets/69359047/788f9864-db9a-46b0-97c3-3c9428b96d84)
 
