@@ -1,7 +1,6 @@
 package com.task.assignment.Validation.validate;
 
 import com.task.assignment.Facade.UserFacade;
-import com.task.assignment.Services.SecurityServices.UserService;
 import com.task.assignment.Validation.CheckUserNameExisted;
 import jakarta.validation.ConstraintValidator;
 import jakarta.validation.ConstraintValidatorContext;

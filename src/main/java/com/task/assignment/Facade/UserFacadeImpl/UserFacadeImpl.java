@@ -29,7 +29,12 @@ public class UserFacadeImpl implements UserFacade {
 
     @Override
     public Boolean checkUserExisted(String name) {
-        return authenticationServices.getUser(name) == null;
+        try {
+            return authenticationServices.getUser(name) == null;
+        }
+        catch (Exception e) {
+            return true;
+        }
     }
 
     @Autowired
