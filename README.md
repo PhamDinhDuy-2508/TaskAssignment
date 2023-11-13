@@ -5,6 +5,26 @@ docker build -t  mysql_task .
 ```
 
 Next we initialize the dabase, we will go to the Docker-compose folder and run the command like in file docker-compose in TaskCompose folder.
+```bash
+version: '3'
+services: 
+  DB: 
+    image: mysql_task
+    container_name: Task_container_Mysql 
+    environment:
+      - MYSQL_ROOT_PASSWORD=25082000 
+      - MYSQL_DATABASE=TASK
+      - MYSQL_PASSWORD=2508200
+
+    restart: always 
+    ports:
+      - "3307:3306" 
+
+volumes:
+  database: 
+    driver: local
+```
+
 
 We have successfully initialized the DB container!
   
