@@ -1,23 +1,6 @@
 First we go to the db folder in TaskCompose attached to gitup and run the docker file,rreate an image named mysql_task (docker build -t  mysql_task .)
 
-Next we initialize the dabase, we will go to the Docker-compose folder and run the command below
-
-version: '3'
-services: 
-  DB: 
-    image: mysql_task
-    container_name: Task_container_Mysql 
-    environment:
-      - MYSQL_ROOT_PASSWORD=25082000 
-      - MYSQL_DATABASE=TASK
-      - MYSQL_PASSWORD=2508200
-    restart: always 
-    ports:
-      - "3307:3306" 
-volumes:
-  database: 
-    driver: local
-
+Next we initialize the dabase, we will go to the Docker-compose folder and run the command like in file docker-compose in TaskCompose folder.
   We have successfully initialized the DB container!
 
  Next is the API here which has 2 forms:
