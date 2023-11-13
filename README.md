@@ -89,7 +89,7 @@ Create TASK  API :
 ```
 ```bash
 Header:{
-'Authorization' : "Bearer" +  /* token has bee reponsed by Login */
+'Authorization' : "Bearer" +  /* token has been reponsed by Login */
 }
 ```
 ```bash
@@ -109,7 +109,7 @@ api/v1/tasks/update/{id}
 ```
 ```bash
 Header:{
-'Authorization' : "Bearer" +  /* token has bee reponsed by Login */
+'Authorization' : "Bearer" +  /* token has been reponsed by Login */
 }
 ```
 ```
@@ -129,7 +129,7 @@ api/v1/tasks/delete/{id}
 ```
 ```bash
 Header:{
-'Authorization' : "Bearer" +  /* token has bee reponsed by Login */
+'Authorization' : "Bearer" +  /* token has been reponsed by Login */
 }
 ```
 
