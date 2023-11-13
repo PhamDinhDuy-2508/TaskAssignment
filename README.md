@@ -93,7 +93,6 @@ Header:{
 }
 ```
 ```bash
-
 request Body :
 {
     "title":"phamdinhduytest123456",
@@ -108,9 +107,11 @@ Update TASK  API :
 ```bash
 api/v1/tasks/update/{id}
 ```
+```bash
 Header:{
 'Authorization' : "Bearer" +  /* token has bee reponsed by Login */
 }
+```
 ```
 request Body :
 {
