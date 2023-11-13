@@ -47,6 +47,7 @@ GET ALL TASK  API :
 ![image](https://github.com/PhamDinhDuy-2508/TaskAssignment/assets/69359047/ec059f1b-b3be-4768-a172-bc72879310da)
 
 GET TASK WITH ID  API : 
+
 ```bash
 /api/v1/tasks/get/{id}
 ```
