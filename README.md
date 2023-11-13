@@ -12,15 +12,19 @@ We have successfully initialized the DB container!
 
  Next is the API here which has 2 forms:
 first api without authentication includes:
-'''url
+
+```bash
 _/api/v1/auth/login
-
+```
+```bash
 _/api/v1/auth/register
-
+```
+```bash
 _/api/v1/tasks/getAll
-
+```
+```bash
 _ /api/v1/tasks/get/{id}
-'''
+```
 
 2. API needs authentication and authorization:
 _/api/v1/tasks/create
