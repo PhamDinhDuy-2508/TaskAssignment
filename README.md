@@ -121,7 +121,7 @@ request Body :
 }
 ```
 
-![image](https://github.com/PhamDinhDuy-2508/TaskAssignment/assets/69359047/e7f6e88f-d3ca-4180-93bd-33750908aadd)
+![image](https://github.com/PhamDinhDuy-2508/TaskAssignment/assets/69359047/19976095-f0ed-4755-bb58-ea58bce34980)
 
 DELETE TASK  API : 
 ```bash
