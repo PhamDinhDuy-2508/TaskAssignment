@@ -55,7 +55,7 @@ example request body :
     "password" :"25082000"
 }
 
-![image](https://github.com/PhamDinhDuy-2508/TaskAssignment/assets/69359047/2c712ee4-c44a-41fc-88be-b4554fcf2695)
+![image](https://github.com/PhamDinhDuy-2508/TaskAssignment/assets/69359047/13af3b49-f173-4428-b038-1e10f4fb242a)
 
 After registering, we can start logging in (note that the username and password we just registered and currently by default all accounts are in the ADMIN role)
 example request body :
