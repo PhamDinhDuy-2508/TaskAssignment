@@ -1,0 +1,30 @@
+version: '3'
+services: 
+  DB: 
+    image: mysql_task
+    container_name: Task_container_Mysql 
+    environment:
+      - MYSQL_ROOT_PASSWORD=25082000 
+      - MYSQL_DATABASE=TASK
+      - MYSQL_PASSWORD=2508200
+
+    restart: always 
+   
+    expose:
+      - 3306
+  app: 
+    build: .
+    image: task_project
+    container_name: Task_container_App
+  
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:mysql://mysql:3306/task
+      - SPRING_DATASOURCE_USERNAME=root
+      - SPRING_DATASOURCE_PASSWORD=25082000
+      - hibernate.connection.url=jdbc:mysql://mysql:3306/task
+    ports:
+      - 8181:8188
+
+volumes:
+  database: 
+    driver: local
