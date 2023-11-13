@@ -8,7 +8,7 @@ Next we initialize the dabase, we will go to the Docker-compose folder and run t
 
 We have successfully initialized the DB container!
   
-## Usage
+## Introduce
 
  Next is the API here which has 2 forms:
 first api without authentication includes:
@@ -37,18 +37,20 @@ first api without authentication includes:
 /api/v1/tasks/create
 ```
 
+## Usage
 
-use the an unauthorization API:
-GET ALL TASK  API : /api/v1/tasks/getAll
-
+An unauthorization API:
+GET ALL TASK  API :
+```bash
+/api/v1/tasks/getAll
+```
 ![image](https://github.com/PhamDinhDuy-2508/TaskAssignment/assets/69359047/ec059f1b-b3be-4768-a172-bc72879310da)
 
-GET TASK WITH ID  API : /api/v1/tasks/get/{id}
-
+GET TASK WITH ID  API : 
+```bash
+/api/v1/tasks/get/{id}
+```
 ![image](https://github.com/PhamDinhDuy-2508/TaskAssignment/assets/69359047/8fcb0fb7-67e9-45b5-9e09-1ba76f422108)
-
-
-
 
 
 To be able to use the authorization API:
