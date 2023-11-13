@@ -14,22 +14,28 @@ We have successfully initialized the DB container!
 first api without authentication includes:
 
 ```bash
-_/api/v1/auth/login
+/api/v1/auth/login
 ```
 ```bash
-_/api/v1/auth/register
+/api/v1/auth/register
 ```
 ```bash
-_/api/v1/tasks/getAll
+/api/v1/tasks/getAll
 ```
 ```bash
-_ /api/v1/tasks/get/{id}
+/api/v1/tasks/get/{id}
 ```
 
 2. API needs authentication and authorization:
-_/api/v1/tasks/create
-_/api/v1/tasks/update
-_/api/v1/tasks/create
+```bash
+/api/v1/tasks/create
+```
+```bash
+/api/v1/tasks/update
+```
+```bash
+/api/v1/tasks/create
+```
 
 
 use the an unauthorization API:
