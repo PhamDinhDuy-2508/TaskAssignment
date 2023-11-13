@@ -1,14 +1,23 @@
+## Installation
 First we go to the db folder in TaskCompose attached to gitup and run the docker file,rreate an image named mysql_task (docker build -t  mysql_task .)
 
 Next we initialize the dabase, we will go to the Docker-compose folder and run the command like in file docker-compose in TaskCompose folder.
-  We have successfully initialized the DB container!
+
+We have successfully initialized the DB container!
+  
+## Usage
 
  Next is the API here which has 2 forms:
 first api without authentication includes:
+'''url
 _/api/v1/auth/login
+
 _/api/v1/auth/register
+
 _/api/v1/tasks/getAll
+
 _ /api/v1/tasks/get/{id}
+'''
 
 2. API needs authentication and authorization:
 _/api/v1/tasks/create
