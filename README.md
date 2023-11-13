@@ -1,0 +1,88 @@
+First we go to the db folder in TaskCompose attached to gitup and run the docker file,rreate an image named mysql_task (docker build -t  mysql_task .)
+
+Next we initialize the dabase, we will go to the Docker-compose folder and run the command below
+
+version: '3'
+services: 
+  DB: 
+    image: mysql_task
+    container_name: Task_container_Mysql 
+    environment:
+      - MYSQL_ROOT_PASSWORD=25082000 
+      - MYSQL_DATABASE=TASK
+      - MYSQL_PASSWORD=2508200
+    restart: always 
+    ports:
+      - "3307:3306" 
+volumes:
+  database: 
+    driver: local
+
+  We have successfully initialized the DB container!
+
+ Next is the API here which has 2 forms:
+first api without authentication includes:
+_/api/v1/auth/login
+_/api/v1/auth/register
+_/api/v1/tasks/getAll
+_ /api/v1/tasks/get/{id}
+
+2. API needs authentication and authorization:
+_/api/v1/tasks/create
+_/api/v1/tasks/update
+_/api/v1/tasks/create
+
+
+use the an unauthorization API:
+GET ALL TASK  API : /api/v1/tasks/getAll
+![image](https://github.com/PhamDinhDuy-2508/TaskAssignment/assets/69359047/ec059f1b-b3be-4768-a172-bc72879310da)
+GET TASK WITH ID  API : /api/v1/tasks/get/{id}
+![image](https://github.com/PhamDinhDuy-2508/TaskAssignment/assets/69359047/8fcb0fb7-67e9-45b5-9e09-1ba76f422108)
+
+
+
+
+To be able to use the authorization API:
+_ If we do not have an account, we will go to /api/v1/auth/register to register see example below.
+example request body :
+{
+    "username" : "phamdinhduytest123",
+    "password" :"25082000"
+}
+![image](https://github.com/PhamDinhDuy-2508/TaskAssignment/assets/69359047/2c712ee4-c44a-41fc-88be-b4554fcf2695)
+After registering, we can start logging in (note that the username and password we just registered and currently by default all accounts are in the ADMIN role)
+example request body :
+{
+    "username" : "phamdinhduytest123",
+    "password" :"25082000"
+}
+![image](https://github.com/PhamDinhDuy-2508/TaskAssignment/assets/69359047/0b593431-aa21-47df-9b91-d9ed5303e98c)
+Save the token And use that token for API authorizations
+Create TASK  API : /api/v1/tasks/create
+Header:{
+'Authorization' : "Bearer" +  /* token has bee reponsed by Login */
+}
+request Body :
+{
+    "title":"phamdinhduytest123456",
+    "description":"123123123123123123",
+    "complete" : true
+}
+![image](https://github.com/PhamDinhDuy-2508/TaskAssignment/assets/69359047/788f9864-db9a-46b0-97c3-3c9428b96d84)
+Update TASK  API : api/v1/tasks/update/{id}
+Header:{
+'Authorization' : "Bearer" +  /* token has bee reponsed by Login */
+}
+request Body :
+{
+    "title":"phamdinhduy2508123123123",
+    "description":"123123123123123123",
+    "complete" : true
+}
+![image](https://github.com/PhamDinhDuy-2508/TaskAssignment/assets/69359047/e7f6e88f-d3ca-4180-93bd-33750908aadd)
+DELETE TASK  API : api/v1/tasks/delete/{id}
+Header:{
+'Authorization' : "Bearer" +  /* token has bee reponsed by Login */
+}
+![image](https://github.com/PhamDinhDuy-2508/TaskAssignment/assets/69359047/fbc39f8d-e00f-4ef1-9544-54bb58332b0b)
+    
