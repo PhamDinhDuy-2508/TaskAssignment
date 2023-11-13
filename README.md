@@ -1,5 +1,8 @@
 ## Installation
-First we go to the db folder in TaskCompose attached to gitup and run the docker file,rreate an image named mysql_task (docker build -t  mysql_task .)
+First we go to the db folder in TaskCompose attached to gitup and run the docker file,rreate an image named mysql_task 
+'''bash
+(docker build -t  mysql_task .)
+'''
 
 Next we initialize the dabase, we will go to the Docker-compose folder and run the command like in file docker-compose in TaskCompose folder.
 
