@@ -101,7 +101,7 @@ example request body :
 ```
 ![image](https://github.com/PhamDinhDuy-2508/TaskAssignment/assets/69359047/0b593431-aa21-47df-9b91-d9ed5303e98c)
 
-Save the token And use that token for API authorizations
+Save the token and use that token for API authorizations
 
 Create TASK  API : 
 ```bash
