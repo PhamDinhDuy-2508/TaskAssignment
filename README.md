@@ -1,5 +1,5 @@
 ## Installation
-First we go to the db folder in TaskCompose attached to gitup and run the docker file,rreate an image named mysql_task 
+First we go to the db folder in TaskCompose attached to gitup and run the docker file,create an image named mysql_task 
 ```bash
 docker build -t  mysql_task .
 ```
@@ -109,7 +109,7 @@ Create TASK  API :
 ```
 ```bash
 Header:{
-'Authorization' : "Bearer" +  /* token has been reponsed by Login */
+'Authorization' : "Bearer" +  /* token has been responsed by Login */
 }
 ```
 ```bash
@@ -129,7 +129,7 @@ api/v1/tasks/update/{id}
 ```
 ```bash
 Header:{
-'Authorization' : "Bearer" +  /* token has been reponsed by Login */
+'Authorization' : "Bearer" +  /* token has been responsed by Login */
 }
 ```
 ```
@@ -149,7 +149,7 @@ api/v1/tasks/delete/{id}
 ```
 ```bash
 Header:{
-'Authorization' : "Bearer" +  /* token has been reponsed by Login */
+'Authorization' : "Bearer" +  /* token has been responsed by Login */
 }
 ```
 
